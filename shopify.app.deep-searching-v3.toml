@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "3c9a9c681d781de4ae355f9c7c7424b5"
+name = "deep-searching-v3"
+application_url = "https://louis-prices-amended-patient.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "brand-category.myshopify.com"
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [
+  "https://louis-prices-amended-patient.trycloudflare.com/auth/callback",
+  "https://louis-prices-amended-patient.trycloudflare.com/auth/shopify/callback",
+  "https://louis-prices-amended-patient.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false

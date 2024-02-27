@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ba522ec7a0b21f2715eefd0fdbcc810c"
+name = "deep-search-v2"
+application_url = "https://together-argued-incorporate-spreading.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "reza-test3.myshopify.com"
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [
+  "https://together-argued-incorporate-spreading.trycloudflare.com/auth/callback",
+  "https://together-argued-incorporate-spreading.trycloudflare.com/auth/shopify/callback",
+  "https://together-argued-incorporate-spreading.trycloudflare.com/api/auth/callback"
+]
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products"
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false

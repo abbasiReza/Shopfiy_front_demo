@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "895b9ebedb3044c5da922b0202e18564"
+name = "deep-search-v3"
+application_url = "https://med-ab-quizzes-talent.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "reza-test3.myshopify.com"
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [
+  "https://med-ab-quizzes-talent.trycloudflare.com/auth/callback",
+  "https://med-ab-quizzes-talent.trycloudflare.com/auth/shopify/callback",
+  "https://med-ab-quizzes-talent.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false

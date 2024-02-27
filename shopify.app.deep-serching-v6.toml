@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "558861a55bcbebc79629577d9173d236"
+name = "deep-serching-v6"
+application_url = "https://merchandise-sponsor-km-broke.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "brand-category.myshopify.com"
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [
+  "https://merchandise-sponsor-km-broke.trycloudflare.com/auth/callback",
+  "https://merchandise-sponsor-km-broke.trycloudflare.com/auth/shopify/callback",
+  "https://merchandise-sponsor-km-broke.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false

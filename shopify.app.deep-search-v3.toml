@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "27ec788aff7b71b75e2a44d05cb6a2fc"
+name = "deep-search-v3"
+application_url = "https://wiley-nov-screening-ensuring.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "reza-testing2.myshopify.com"
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [
+  "https://wiley-nov-screening-ensuring.trycloudflare.com/auth/callback",
+  "https://wiley-nov-screening-ensuring.trycloudflare.com/auth/shopify/callback",
+  "https://wiley-nov-screening-ensuring.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false

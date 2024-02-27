@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "995e982fe314c8d4b2a71f61d7f6d895"
+name = "depp-search"
+application_url = "https://brochures-mailto-diamonds-prostate.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "brand-category.myshopify.com"
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [
+  "https://brochures-mailto-diamonds-prostate.trycloudflare.com/auth/callback",
+  "https://brochures-mailto-diamonds-prostate.trycloudflare.com/auth/shopify/callback",
+  "https://brochures-mailto-diamonds-prostate.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false

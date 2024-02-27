@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "9accb6a8d7958f55b09d61fff247d103"
+name = "deep-searching-v2"
+application_url = "https://violations-junction-universe-noise.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "reza-testing2.myshopify.com"
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [
+  "https://violations-junction-universe-noise.trycloudflare.com/auth/callback",
+  "https://violations-junction-universe-noise.trycloudflare.com/auth/shopify/callback",
+  "https://violations-junction-universe-noise.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
