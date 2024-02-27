@@ -66,10 +66,10 @@ export const loader: LoaderFunction = async ({ request }) => {
 
         const response = await fetch(`https://${shop}/admin/api/${apiVersion}/graphql.json`, {
             method: "POST",
-            headers: {
-                "Content-Type": "application/graphql",
-                "X-Shopify-Access-Token": accessToken
-            },
+            // headers: {
+            //     "Content-Type": "application/graphql",
+            //     "X-Shopify-Access-Token": accessToken
+            // },
             body: query
 
         });
