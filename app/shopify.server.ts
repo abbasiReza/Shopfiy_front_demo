@@ -33,7 +33,7 @@ const shopify = shopifyApp({
       console.log('webhooks install',accessToken)
 
       shopify.registerWebhooks({ session });
-      const response = await fetch(`https://transcript-combine-areas-miller.trycloudflare.com/djangoapp/shopify/install_from_front/`, {
+      const response = await fetch(`https://transcript-combine-areas-miller.trycloudflare.com/djangoapp_demo/shopify/install_from_front/`, {
       method: 'POST', // Method is correct for fetching data
       headers: {
         'Content-Type': 'application/json',
